@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    Kalzefer&#39;s Blog
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<meta name="author" content="Kalzefer">
+<meta name="description" content="Kalzefer&#39;s Blog">
+<meta name="keywords" content="Kalzefer,Blog,凯尔,博客">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://Kalzefer.github.io/styles/main.css" />
+<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.12/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.12/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://Kalzefer.github.io">
+                    Kalzefer&#39;s Blog
+                </a>
+            </div>
+
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/">
+                        首页
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        档案
+                    </a>
+                    
+                    <a class="menu-item" href="/tags">
+                        标签
+                    </a>
+                    
+                    <a class="menu-item" href="/post/about">
+                        关于
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1593687819067" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://Kalzefer.github.io">
+                            Kalzefer&#39;s Blog
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1593687819067" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/">
+                            首页
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            档案
+                        </a>
+                        
+                        <a class="menu-item" href="/tags">
+                            标签
+                        </a>
+                        
+                        <a class="menu-item" href="/post/about">
+                            关于
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                麦克坦-宿雾国际机场2号客运大楼，菲律宾 / Integrated Design Associates
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        Kalzefer's Blog
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2020-07-01</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">7.9
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">1816</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://Kalzefer.github.io/WRv0Dz85k/">建筑  ▎Architecture</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://oss.gooood.cn/uploads/2020/06/002-mactan-cebu-international-airport-terminal-2-by-integrated-design-associates-960x323.jpg" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="一座连接菲律宾中部地区的世界级门户机场"><strong>一座连接菲律宾中部地区的世界级门户机场</strong></h2>
+<h6 id="转载自gooood"><em>转载自gooood</em></h6>
+<hr>
+<blockquote>
+<p>项目标签<br>
+· 设计公司　　　： Integrated Design Associates<br>
+· 位置　　　　　： 菲律宾<br>
+· 材料　　　　　： 木材   胶合板<br>
+· 分类　　　　　： 交通建筑   机场   热带建筑</p>
+</blockquote>
+<hr>
+<p>麦克坦-宿雾国际机场是菲律宾第二大的机场。为了满足增长的客流，机场规划建设的新2号客运大楼，将用来代替1号客运大楼承担国际客流。在2号客运大楼落成后，1号客运大楼则作为国内客运大楼投入运营。扩建的设施有望将麦克坦-宿雾国际机场从一个城市级的机场提升为世界级的国际枢纽，成为连接菲律宾中部地区的门户机场。</p>
+<h5 id="mactan-cebu-international-airport-mcia-is-the-second-largest-airport-in-the-philippines-to-meet-traffic-demands-a-new-terminal-2-for-international-traffic-is-planned-to-supplement-the-existing-terminal-1-which-will-be-converted-to-domestic-use-when-t2-completes-the-expanded-facility-is-expected-to-transform-mcia-from-a-city-airport-to-a-world-class-international-hub-as-the-main-gateway-to-the-central-philippine-region">Mactan-Cebu International Airport (MCIA) is the second largest airport in the Philippines. To meet traffic demands a new Terminal 2 for international traffic is planned to supplement the existing Terminal 1, which will be converted to Domestic use when T2 completes. The expanded facility is expected to transform MCIA from a city airport to a world-class international hub, as the main gateway to the central Philippine region.</h5>
+<p><br /><br>
+▼项目概览，project preview <em>©John Nye</em><br>
+<img src="https://Kalzefer.github.io/post-images/1593683812015.jpg" alt="" loading="lazy"></p>
+<p>▼基地轴测图，site isometric <em>©IDA</em><br>
+<img src="https://Kalzefer.github.io/post-images/1593683962869.jpg" alt="" loading="lazy"></p>
+<p>新的2号客运大楼在第一期阶段的设计吞吐量是每年四百万人次，预计将在未来十年内增加到八百万人次。客运大楼模块化的设计方式，允许它在将来逐步扩展，以满足未来的变化。</p>
+<h5 id="the-new-terminal-2-is-designed-for-4-million-passengers-per-annum-mppa-at-the-initial-phase-of-development-and-is-anticipated-to-grow-to-8-mppa-within-the-next-10-years-the-modular-design-allows-the-terminal-to-expand-incrementally-a-basic-building-block-configured-for-optimum-adaptability-to-meet-future-change">The new Terminal 2 is designed for 4 million passengers per annum (mppa) at the initial phase of development, and is anticipated to grow to 8 mppa within the next 10 years.  The modular design allows the terminal to expand incrementally, a basic building block configured for optimum adaptability to meet future change.</h5>
+<p> <br>
+▼2号客运大楼整体外观，overall exterior view of the new Terminal 2 <em>©John Nye</em><br>
+<img src="https://Kalzefer.github.io/post-images/1593684165161.jpg" alt="" loading="lazy"><br>
+<img src="https://Kalzefer.github.io/post-images/1593684172419.jpg" alt="" loading="lazy"></p>
+<p>宿雾是国际知名的度假胜地。作为这主要的出入口，新大楼的设计在充分考虑交通枢纽的功能上，也呼应着度假的感觉。设计植根于本地文脉。客运大楼就似本地传统热带大寨，有着高耸坡顶和低伏侧檐，这些都能有效帮助建筑减少直射日光造成的热量和眩光。顶层轻质结构可以承受地震的影响，其形状也加强了建筑抵御台风的能力。 这结构采用的是环保建筑材料，且是本地工匠能够建造的技术。建筑中散发的简约和温暖，使其区别于众多机场中常见的冷酷刻板的形象。新的2号客运大楼的设计正是为乘客提供这样一种全新的体验。</p>
+<h5 id="cebu-is-an-internationally-well-known-holiday-destination-the-new-terminal-2-as-the-gateway-to-tourist-resorts-in-the-region-is-designed-to-echo-a-resort-like-feel-while-function-as-a-transport-interchange-its-concept-is-contextual-like-a-tropical-grand-indigenous-house-in-the-philippines-the-terminal-has-a-high-pitch-roof-and-low-eaves-to-fend-off-solar-heat-and-glare-the-uppermost-structure-is-lightweight-to-withstand-seismic-activity-and-its-form-is-well-braced-against-typhoons-the-superstructure-is-made-from-sustainable-material-and-capable-to-be-built-by-local-craftsmen-the-building-exudes-simplicity-and-warmth-to-stand-it-apart-from-the-institutional-coldness-typified-by-many-airports-the-new-terminal-2-is-designed-to-offer-a-new-experience-for-passengers">Cebu is an internationally well-known holiday destination.  The new Terminal 2, as the gateway to tourist resorts in the region, is designed to echo a resort-like feel while function as a transport interchange.  Its concept is contextual.  Like a tropical grand indigenous house in The Philippines, the terminal has a high pitch roof and low eaves to fend off solar heat and glare. The uppermost structure is lightweight to withstand seismic activity and its form is well braced against typhoons. The superstructure is made from sustainable material and capable to be built by local craftsmen.  The building exudes simplicity and warmth to stand it apart from the institutional coldness typified by many airports.  The new Terminal 2 is designed to offer a new experience for passengers.</h5>
+<p> <br>
+▼立面和屋顶细节，facade and roof details <em>©John Nye</em><br>
+<img src="https://Kalzefer.github.io/post-images/1593684299141.jpg" alt="" loading="lazy"></p>
+<p>▼值机大厅空间概览，check-in hall <em>©John Nye</em><br>
+<img src="https://Kalzefer.github.io/post-images/1593684328250.jpg" alt="" loading="lazy"></p>
+<p>▼顶层轻质结构采用了环保建筑材料，the lightweight uppermost structure is made from sustainable material <em>©John Nye</em><br>
+<img src="https://Kalzefer.github.io/post-images/1593684953516.jpg" alt="" loading="lazy"></p>
+<p>三层的客运大楼将出发设施安置在顶层，抵达设施在地面和夹层。客运大楼的屋顶是由连续的跨度三十米的胶合层压板木拱支撑，这也定义了它的基本模块构成及其整体建筑形态。拱顶的天窗将自然光引入室内，而拱间的谷形连接则巧妙地结合入了空调系统。十五米高的南北主立面，在屋顶挑檐的荫蔽下，使内部可以拥有连续的、毫无遮挡的视野。 屋顶的朝向以及建筑从入口到登机的通透，为乘客在建筑内行走提供了明确的方向感。</p>
+<h5 id="the-3-story-terminal-building-comprises-of-departure-facilities-at-the-top-level-and-arrival-facilities-at-ground-and-mezzanine-levels-the-main-roof-structure-composed-of-arrays-of-glulam-arches-spanning-30m-defines-the-building-modular-composition-and-its-architectural-form-air-conditioning-ducts-are-fully-integrated-into-the-valleys-of-the-vaulted-roof-while-the-apex-of-the-arch-has-skylights-to-let-in-natural-light-the-15m-high-main-north-and-south-façades-protected-by-the-roof-overhangs-offer-clear-uninterrupted-views-out-of-the-building-the-orientation-of-the-roof-and-clear-visibility-from-kerb-side-to-aircraft-provide-an-unequivocal-sense-of-direction-for-passengers-moving-through-the-building">The 3-story Terminal building comprises of Departure facilities at the top level and Arrival facilities at ground and mezzanine levels.  The main roof structure, composed of arrays of glulam arches spanning 30m, defines the building modular composition and its architectural form.  Air-conditioning ducts are fully integrated into the valleys of the vaulted roof, while the apex of the arch has skylights to let in natural light.  The 15m high main north and south façades, protected by the roof overhangs, offer clear, uninterrupted views out of the building. The orientation of the roof and clear visibility from kerb side to aircraft provide an unequivocal sense of direction for passengers moving through the building.</h5>
+<p> <br>
+▼剖面透视图，sectional perspective <em>©IDA</em><br>
+<img src="https://Kalzefer.github.io/post-images/1593685034577.jpg" alt="" loading="lazy"></p>
+<p>▼局部结构轴测，structure isometric <em>©IDA</em><br>
+<img src="https://Kalzefer.github.io/post-images/1593685057991.jpg" alt="" loading="lazy"></p>
+<p>▼拱顶的天窗将自然光引入室内，the apex of the arch has skylights to let in natural light <em>©John Nye</em><br>
+<img src="https://Kalzefer.github.io/post-images/1593685090339.jpg" alt="" loading="lazy"></p>
+<p>▼屋顶结构细节，roof structure details <em>©John Nye</em><br>
+<img src="https://Kalzefer.github.io/post-images/1593685131199.jpg" alt="" loading="lazy"></p>
+<p>▼商业区，retail area <em>©John Nye</em><br>
+<img src="https://Kalzefer.github.io/post-images/1593685162220.jpg" alt="" loading="lazy"></p>
+<p>▼候机厅，lounge area <em>©John Nye</em><br>
+<img src="https://Kalzefer.github.io/post-images/1593685183688.jpg" alt="" loading="lazy"></p>
+<p>麦克坦-宿雾国际机场项目在建设期间已经打破了一些记录。建筑的集成材木结构是由来自认证可持续产地的云杉制成，这是目前世界上同类产品中规模之最。同时这也是亚洲第一次有重要的交通类建筑，因低碳足迹，易于安装和自然的完成面而采用集成材。这样大胆的设计成就了一个值得庆祝的地标; 这是一个值得骄傲的标志，也展现了宿雾最美好的一面。</p>
+<h5 id="the-mcia-project-has-already-broken-a-few-records-during-its-construction-the-glulam-timber-structure-made-of-spruce-from-certified-sustainable-source-is-the-biggest-project-of-its-kind-in-the-world-the-use-of-laminated-timber-is-another-first-for-a-major-transport-building-in-asia-and-is-selected-for-its-low-carbon-footprint-ease-of-erection-and-a-natural-self-finish-the-bold-design-is-a-celebrated-landmark-a-symbol-of-pride-and-a-showcase-of-the-best-cebu-have-to-offer">The MCIA project has already broken a few records during its construction. The glulam timber structure, made of spruce from certified sustainable source, is the biggest project of its kind in the world.  The use of laminated timber is another first for a major transport building in Asia, and is selected for its low-carbon footprint, ease of erection and a natural self-finish. The bold design is a celebrated landmark; a symbol of pride and a showcase of the best Cebu have to offer.</h5>
+<p> <br>
+▼值机柜台，check-in counters <em>©John Nye</em><br>
+<img src="https://Kalzefer.github.io/post-images/1593685244907.jpg" alt="" loading="lazy"></p>
+<p>▼抵达设施在地面和夹层，arrival facilities are arranged at ground and mezzanine levels <em>©John Nye</em><br>
+<img src="https://Kalzefer.github.io/post-images/1593685273611.jpg" alt="" loading="lazy"></p>
+<p>▼交通空间，circulation area <em>©John Nye</em><br>
+<img src="https://Kalzefer.github.io/post-images/1593685300131.jpg" alt="" loading="lazy"></p>
+<p>正如总统先生在2018年6月开幕典礼所言，“这是一个美丽的机场，宿雾人民非常的幸运…”</p>
+<h5 id="as-mr-president-declared-after-the-inauguration-ceremony-in-june-2018-its-a-beautiful-airport-cebuanos-are-very-lucky">As Mr. President declared after the inauguration ceremony in June 2018, “It’s a beautiful airport, Cebuanos are very lucky…”</h5>
+<p> <br>
+▼航站楼夜景，Terminal 2 night view <em>©John Nye</em><br>
+<img src="https://Kalzefer.github.io/post-images/1593685353645.jpg" alt="" loading="lazy"></p>
+<p>▼局部模型，partial model <em>©IDA</em><br>
+<img src="https://Kalzefer.github.io/post-images/1593685375897.jpg" alt="" loading="lazy"></p>
+<p>▼部分结构轴测，partial structural isometric <em>©IDA</em><br>
+<img src="https://Kalzefer.github.io/post-images/1593685408971.jpg" alt="" loading="lazy"></p>
+<p>▼二层平面图，plan level 2 <em>©IDA</em><br>
+<img src="https://Kalzefer.github.io/post-images/1593685427494.jpg" alt="" loading="lazy"></p>
+<p>▼立面和剖面图，elevations and sections <em>©IDA</em><br>
+<img src="https://Kalzefer.github.io/post-images/1593685456895.jpg" alt="" loading="lazy"></p>
+<hr>
+<blockquote>
+<p>项目名称：麦克坦 · 宿雾国际机场二号客运大楼<br>
+设计方：综汇建筑设计有限公司<br>
+公司网站：www.ida-hk.com<br>
+联系邮箱：nigel.yang@ida-hk.com<br>
+项目设计 &amp; 完成年份：2013-2018<br>
+主创及设计团队：Winston SHU (徐腾), Chokchai SEREEVINYAYUT, Gaurav KALIA, Chris BELLSLE, Brian FUNG (冯立行), Minjae KIM (金文載), Paul MAK (麦启灏) ,Giuliano PAIRONE, Konstantina SARANTI, Dominik SCHEPLEIN, William TAM (譚囯元), Hyeonsu YANG (梁賢修) 和 Nigel Yiyi YANG (杨一轶).<br>
+项目地址：菲律宾宿雾拉扑拉普市，麦克坦区，机场路，麦克坦 · 宿雾国际机场T2航站楼<br>
+建筑面积：53，000平方米<br>
+摄影版权：John Nye<br>
+合作方<br>
+项目管理：MGCJV<br>
+结构/幕墙/机电 : 奥亚纳<br>
+灯光设计：LPI<br>
+木结构 ：Rubner<br>
+客户：GMCAC<br>
+品牌：木结构：Rubner Holzbau<br>
+屋面系统: Iscom<br>
+天花系统：Durlum<br>
+仿藤家具：Dedon</p>
+</blockquote>
+<hr>
+<center>欢迎在下方讨论在MC中实现的思路以及还原（二次创作）的建筑作品投稿。</center>
+
+                        </div>
+                        
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>Kalzefer's Blog</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://Kalzefer.github.io/mai-ke-tan-su-wu-guo-ji-ji-chang-2-hao-ke-yun-da-lou-fei-lu-bin-integrated-design-associates/">https://Kalzefer.github.io/mai-ke-tan-su-wu-guo-ji-ji-chang-2-hao-ke-yun-da-lou-fei-lu-bin-integrated-design-associates/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://Kalzefer.github.io/mai-ke-tan-su-wu-guo-ji-ji-chang-2-hao-ke-yun-da-lou-fei-lu-bin-integrated-design-associates/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://Kalzefer.github.io/mai-ke-tan-su-wu-guo-ji-ji-chang-2-hao-ke-yun-da-lou-fei-lu-bin-integrated-design-associates/&sharesource=qzone&title=麦克坦-宿雾国际机场2号客运大楼，菲律宾 / Integrated Design Associates&pics=https://Kalzefer.github.io/images/avatar.png?v=1593687819067&summary="><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://Kalzefer.github.io/mai-ke-tan-su-wu-guo-ji-ji-chang-2-hao-ke-yun-da-lou-fei-lu-bin-integrated-design-associates/&sharesource=weibo&title=麦克坦-宿雾国际机场2号客运大楼，菲律宾 / Integrated Design Associates + " - " + &pic="https://Kalzefer.github.io/images/avatar.png?v=1593687819067 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src="https://wx1.sbimg.cn/2020/07/01/2H13N.jpg"><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src="https://wx2.sbimg.cn/2020/07/01/2HjyD.png"><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://Kalzefer.github.io/WRv0Dz85k/">#
+                                                建筑  ▎Architecture
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                            
+                                                                                </section>
+                    </article>
+                </div>
+                
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: false,
+        recordIP: false,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        Kalzefer&#39;s Blog &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="https://gridea.dev/" target="_blank">
+                                                Gridea
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.5
+                </div>
+                
+                    <script>
+                        var pat = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + pat + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var music_array = [];
+                        
+                        music_array.push({
+                            name: 'Good Day',
+                            url: 'http://music.163.com/song/media/outer/url?id=438803640.mp3',
+                            artist: 'DNCE',
+                            cover: 'http://s3-press.niusnews.com/58331_1_15064368020614.jpg',
+                        });
+                        
+                        music_array.push({
+                            name: 'Bomb Digga Woo',
+                            url: 'http://music.163.com/song/media/outer/url?id=444548120.mp3',
+                            artist: 'jhameel',
+                            cover: 'https://img3.doubanio.com/view/subject/m/public/s29747972.jpg',
+                        });
+                        
+                        music_array.push({
+                            name: 'Why',
+                            url: 'http://music.163.com/song/media/outer/url?id=489041829.mp3',
+                            artist: 'Sabrina Carpenter',
+                            cover: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000001Vv9kP2g1AzQ_1.jpg?max_age=2592000',
+                        });
+                        
+                        console.log(" MusicList: " + music_array);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: music_array
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1593687819067);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+                
+                    <div id="tp-weather-widget" style="background: #666;display: flex;"></div>
+                    <script>
+                        (function(T, h, i, n, k, P, a, g, e) {
+                            g = function() {
+                                P = h.createElement(i);
+                                a = h.getElementsByTagName(i)[0];
+                                P.src = k;
+                                P.charset = "utf-8";
+                                P.async = 1;
+                                a.parentNode.insertBefore(P, a)
+                            };
+                            T["ThinkPageWeatherWidgetObject"] = n;
+                            T[n] || (T[n] = function() {
+                                (T[n].q = T[n].q || []).push(arguments)
+                            });
+                            T[n].l = +new Date();
+                            if (T.attachEvent) {
+                                T.attachEvent("onload", g)
+                            } else {
+                                T.addEventListener("load", g, false)
+                            }
+                        }(window, document, "script", "tpwidget", "//widget.seniverse.com/widget/chameleon.js"))
+                    </script>
+                    <script>
+                        var wearther_margin = "10px 10px";
+                        
+                        wearther_margin = "70px 5px";
+                        
+                        tpwidget("init", {
+                            "flavor": "bubble",
+                            "location": "WX4FBXXFKE4F",
+                            "geolocation": "enabled",
+                            "position": "bottom-left",
+                            "margin": wearther_margin,
+                            "language": "zh-chs",
+                            "unit": "c",
+                            "theme": "chameleon",
+                            "uid": "UFC977E1C7",
+                            "hash": "213ad798bc472dc365da3a9d4a9ff115"
+                        });
+                        tpwidget("show");
+                    </script>
+                    
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>
